@@ -2,7 +2,7 @@
 
 ## Security
 
-### Disc encryption
+### Hard disc encryption
 
 Go to `System preferences > Security & Privacy > FileVault` and make sure the FileVault is ON.
 
@@ -14,56 +14,116 @@ Go to `System preferences > Security & Privacy > Firewall` and make sure the Fir
 
 In `System preferences > Keyboard`:
 
-* `Key Repeat > Fast` (all the way to the right)
-* `Delay Until Repeat > Short` (all the way to the right)
-* `Modifier Keys... > Caps Lock (⇪) Key` set to `^ Control`
+  * `Key Repeat > Fast` (all the way to the right)
+  * `Delay Until Repeat > Short` (all the way to the right)
+  * `Modifier Keys... > Caps Lock (⇪) Key` set to `^ Control`
 
 ## Apps
 
+#### Text editor
+
 Install Atom: https://atom.io/
+
+#### Web browser
 
 Install Chrome: https://www.google.com/chrome/browser/desktop/index.html
 
-Install terminal iTerm2: https://www.iterm2.com/downloads.html
+#### Terminal
 
-Install software package manager Homebrew: http://brew.sh/
+Install iTerm2: https://www.iterm2.com/downloads.html
 
-`brew install curl git mc gpg gpg2`
+#### Software package manager
 
-`brew install zsh zsh-completions && chsh -s /bin/zsh`
+Install Homebrew: http://brew.sh/
 
-`sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"`
+#### Basic tools
 
-Install [Powerline Fonts]:
-* `cd $HOME`
-* `git clone https://github.com/powerline/fonts.git`
-* `./fonts/install.sh`
-
-Set font in iTerm2 to Meslo, for ex.:
-
-`Fixed Width > Meslo LG S DZ for Powerline > RegularForPowerline > 11`
-
-Use [Solarized Theme] in iTerm2:
-* Download http://ethanschoonover.com/solarized/files/solarized.zip
-* Unpack
-* Import and select theme in iTerm2
-
-Make sure you have following lines in `~/.zshrc` file:
+Install some useful packages:
 
 ```shell
-# Path to your oh-my-zsh installation.
-export ZSH=$HOME/.oh-my-zsh
+brew install curl mc gpg gpg2
+```
 
-# Set name of the theme to load.
-# Look in ~/.oh-my-zsh/themes/
-# Optionally, if you set this to "random", it'll load a random theme each
-# time that oh-my-zsh is loaded.
+#### Git
+
+Install Git:
+
+```shell
+brew install git
+```
+
+Set you username and email in Git:
+
+```shell
+git config --global user.name "Mona Lisa"
+git config --global user.email "email@example.com"
+```
+
+:warning: Don't forget to replace _"Mona Lisa"_ and _"email@example.com"_ with your own data.
+
+#### Shell
+
+Install [Zsh] and set it as a default shell:
+
+```shell
+brew install zsh zsh-completions
+chsh -s /bin/zsh
+```
+
+:warning: Reopen terminal window now to load Zsh shell.
+
+Install [Oh My Zsh]:
+
+```shell
+sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+```
+
+#### Make your terminal look pretty
+
+##### Use [Solarized Theme] in iTerm2
+
+* Download http://ethanschoonover.com/solarized/files/solarized.zip
+* Unpack
+* Go to: `iTerm2 > Preferences > Profiles > Colors`
+* Use `Color presets...` menu to import and select downloaded `Solarized dark` theme
+
+##### Install [Powerline Fonts]
+
+```shell
+cd $HOME
+git clone https://github.com/powerline/fonts.git
+./fonts/install.sh
+rm -rf ~/fonts/
+```
+
+##### Set font in iTerm2
+
+* Go to: `iTerm2 > Preferences > Profiles > Text > Font > Change Font`
+* Select the font: `Fixed Width > Meslo LG S DZ for Powerline > RegularForPowerline > 11`
+
+##### Set zsh theme
+
+Edit `~/.zshrc` file and update `ZSH_THEME=` to:
+
+```shell
 ZSH_THEME="agnoster"
+```
 
+#### Configure Zsh
+
+Edit `~/.zshrc` file and update `plugins=` to:
+
+```shell
 plugins=(git bundler osx rake ruby rails zsh-autosuggestions fasd)
+```
 
-source $ZSH/oh-my-zsh.sh
+:mortar_board: List of all available plugins is here: https://github.com/robbyrussell/oh-my-zsh/tree/master/plugins.
+
+Edit `~/.zshrc` file and the following lines at the end:
+
+```shell
 export EDITOR='vim'
+
 DEFAULT_USER=`whoami`
 
 HISTFILE=$HOME/.zsh_history
@@ -80,97 +140,59 @@ setopt HIST_SAVE_NO_DUPS        # don't save duplicates
 setopt INC_APPEND_HISTORY       # write after each command
 setopt SHARE_HISTORY            # share history between sessions
 
-export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
-
 ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='fg=30'
 
 LC_CTYPE=en_US.UTF-8
 LC_ALL=en_US.UTF-8
 ```
 
-Install tmux:
-
-`brew install tmux`
-
-My `~/.tmux.conf`:
-
-```
-# C-b is not acceptable -- Vim uses it
-set-option -g prefix C-a
-bind-key C-a last-window
-
-# Allows us to use C-a a <command> to send commands to a TMUX session inside
-# another TMUX session
-bind-key a send-prefix
-
-# Start numbering at 1
-set -g base-index 1
-
-# color
-set -g default-terminal "screen-256color"
-
-# status bar
-set-option -g status-utf8 on
-
-# Enable Scrolling with mouse
-#setw -g mode-mouse on
-
-# Enable Scrolling with mouse through history as well
-set -g terminal-overrides 'screen-256color:smcup@:rmcup@'
-
-#### COLOUR (Solarized dark)
-
-# default statusbar colors
-set-option -g status-bg black #base02
-set-option -g status-fg yellow #yellow
-set-option -g status-attr default
-
-# default window title colors
-set-window-option -g window-status-fg brightblue #base0
-set-window-option -g window-status-bg default
-#set-window-option -g window-status-attr dim
-
-# active window title colors
-set-window-option -g window-status-current-fg brightred #orange
-set-window-option -g window-status-current-bg default
-#set-window-option -g window-status-current-attr bright
-
-# pane border
-set-option -g pane-border-fg black #base02
-set-option -g pane-active-border-fg brightgreen #base01
-
-# message text
-set-option -g message-bg black #base02
-set-option -g message-fg brightred #orange
-
-# pane number display
-set-option -g display-panes-active-colour blue #blue
-set-option -g display-panes-colour brightred #orange
-
-# clock
-set-window-option -g clock-mode-colour green #green
-```
+#### Vim
 
 Install Janus Vim Distribution: https://github.com/carlhuda/janus
 
-Another apps I recommend:
-* Alfred 2
-* Spectacle 2
-* Monosnap
+#### Terminal multiplexer
 
-## RoR & web development
+```shell
+brew install tmux
+```
 
-`brew install postgresql && brew services start postgresql`
+Create/update `~/.tmux.conf` file with: [tmux.conf](.tmux.conf).
 
-`brew install redis && brew services start redis`
+### Another apps I recommend
 
-To launch PostgreSQL and Redis automatically on system startup:
-* `ln -sfv /usr/local/opt/postgresql/*.plist ~/Library/LaunchAgents`
-* `ln -sfv /usr/local/opt/redis/*.plist ~/Library/LaunchAgents`
+* [Alfred](https://www.alfredapp.com/)
+* [Spectacle](https://www.spectacleapp.com/)
+* [Monosnap](https://monosnap.com/welcome)
 
-`brew install node`
+### RoR & web development
 
-Install Ruby version manager: https://rvm.io/rvm/install
+#### PostgreSQL
 
+```shell
+brew install postgresql
+brew services start postgresql
+ln -sfv /usr/local/opt/postgresql/*.plist ~/Library/LaunchAgents
+```
+
+#### Redis
+
+```shell
+brew install redis
+brew services start redis
+ln -sfv /usr/local/opt/redis/*.plist ~/Library/LaunchAgents
+```
+
+#### NodeJS
+
+```shell
+brew install node
+```
+
+#### Ruby version manager
+
+Install RVM: https://rvm.io/rvm/install
+
+[Zsh]: http://www.zsh.org/
+[Oh My Zsh]: https://github.com/robbyrussell/oh-my-zsh
 [Powerline Fonts]: https://github.com/powerline/fonts
 [Solarized Theme]: http://ethanschoonover.com/solarized
