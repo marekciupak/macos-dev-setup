@@ -111,6 +111,12 @@ ZSH_THEME="agnoster"
 
 #### Configure Zsh
 
+Install [zsh-autosuggestions]:
+
+```shell
+git clone git://github.com/zsh-users/zsh-autosuggestions $ZSH_CUSTOM/plugins/zsh-autosuggestions
+```
+
 Edit `~/.zshrc` file and update `plugins=` to:
 
 ```shell
@@ -196,3 +202,4 @@ Install RVM: https://rvm.io/rvm/install
 [Oh My Zsh]: https://github.com/robbyrussell/oh-my-zsh
 [Powerline Fonts]: https://github.com/powerline/fonts
 [Solarized Theme]: http://ethanschoonover.com/solarized
+[zsh-autosuggestions]: https://github.com/zsh-users/zsh-autosuggestions
