@@ -101,7 +101,7 @@ rm -rf ~/fonts/
 * Go to: `iTerm2 > Preferences > Profiles > Text > Font > Change Font`
 * Select the font: `Fixed Width > Meslo LG S DZ for Powerline > RegularForPowerline > 11`
 
-##### Set zsh theme
+##### Set [zsh theme]
 
 Edit `~/.zshrc` file and update `ZSH_THEME=` to:
 
@@ -201,5 +201,6 @@ Install RVM: https://rvm.io/rvm/install
 [Zsh]: http://www.zsh.org/
 [Oh My Zsh]: https://github.com/robbyrussell/oh-my-zsh
 [Powerline Fonts]: https://github.com/powerline/fonts
+[zsh theme]: https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
 [Solarized Theme]: http://ethanschoonover.com/solarized
 [zsh-autosuggestions]: https://github.com/zsh-users/zsh-autosuggestions
