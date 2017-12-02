@@ -190,10 +190,14 @@ brew install redis
 brew services start redis
 ```
 
-#### NodeJS
+#### Node Version Manager
+
+Install NVM: https://github.com/creationix/nvm
+
+##### Install yarn
 
 ```shell
-brew install node
+npm install -g yarn
 ```
 
 #### Ruby version manager
