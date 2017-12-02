@@ -154,7 +154,11 @@ LC_ALL=en_US.UTF-8
 
 #### Vim
 
-Install Janus Vim Distribution: https://github.com/carlhuda/janus
+Install [Janus Vim Distribution]:
+
+```shell
+curl -L https://bit.ly/janus-bootstrap | bash
+```
 
 #### Terminal multiplexer
 
@@ -204,3 +208,4 @@ Install RVM: https://rvm.io/rvm/install
 [zsh theme]: https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
 [Solarized Theme]: http://ethanschoonover.com/solarized
 [zsh-autosuggestions]: https://github.com/zsh-users/zsh-autosuggestions
+[Janus Vim Distribution]: https://github.com/carlhuda/janus
