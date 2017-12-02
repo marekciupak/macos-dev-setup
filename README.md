@@ -75,7 +75,7 @@ chsh -s /bin/zsh
 Install [Oh My Zsh]:
 
 ```shell
-sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 ```
 
 #### Make your terminal look pretty
