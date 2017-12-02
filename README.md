@@ -181,7 +181,6 @@ Create/update `~/.tmux.conf` file with: [tmux.conf](.tmux.conf).
 ```shell
 brew install postgresql
 brew services start postgresql
-ln -sfv /usr/local/opt/postgresql/*.plist ~/Library/LaunchAgents
 ```
 
 #### Redis
@@ -189,7 +188,6 @@ ln -sfv /usr/local/opt/postgresql/*.plist ~/Library/LaunchAgents
 ```shell
 brew install redis
 brew services start redis
-ln -sfv /usr/local/opt/redis/*.plist ~/Library/LaunchAgents
 ```
 
 #### NodeJS
