@@ -183,14 +183,6 @@ Install [Janus Vim Distribution]:
 curl -L https://bit.ly/janus-bootstrap | bash
 ```
 
-#### Terminal multiplexer
-
-```shell
-brew install tmux
-```
-
-Create/update `~/.tmux.conf` file with: [tmux.conf](.tmux.conf).
-
 ### Another apps I recommend
 
 * [Alfred](https://www.alfredapp.com/)
