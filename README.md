@@ -26,7 +26,7 @@ Install VS Code: https://code.visualstudio.com/
 
 ##### Configuration
 
-Open VS Code, go to `Code` > `Preferences` > `Settings and paste`:
+Open VS Code, go to `Code` > `Preferences` > `Settings` and paste:
 
 ```yml
 {
