@@ -22,7 +22,30 @@ In `System preferences > Keyboard`:
 
 #### Text editor
 
-Install Atom: https://atom.io/
+Install VS Code: https://code.visualstudio.com/
+
+##### Configuration
+
+Open VS Code, go to `Code` > `Preferences` > `Settings and paste`:
+
+```yml
+{
+    "editor.rulers": [
+        120
+    ],
+    "editor.tabSize": 2,
+    "workbench.colorTheme": "One Monokai",
+    "explorer.confirmDragAndDrop": false,
+    "explorer.confirmDelete": false,
+    "workbench.startupEditor": "newUntitledFile",
+    "files.insertFinalNewline": true,
+    "files.trimTrailingWhitespace": true,
+    "files.trimFinalNewlines": true,
+    "terminal.integrated.fontFamily": "Meslo LG S DZ for Powerline",
+}
+```
+
+Install `One Monokai` extension.
 
 #### Web browser
 
