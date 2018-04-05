@@ -183,6 +183,12 @@ Install [Janus Vim Distribution]:
 curl -L https://bit.ly/janus-bootstrap | bash
 ```
 
+Map `jj` to `esc`:
+
+```shell
+echo ':imap jj <Esc>' >> ~/.vimrc.before
+```
+
 ### Another apps I recommend
 
 * [Alfred](https://www.alfredapp.com/)
