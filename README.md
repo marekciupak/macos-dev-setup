@@ -10,6 +10,10 @@ Go to `System preferences > Security & Privacy > FileVault` and make sure the Fi
 
 Go to `System preferences > Security & Privacy > Firewall` and make sure the Firewall is ON.
 
+### More
+
+https://blog.bejarano.io/hardening-macos.html
+
 ## Keyboard preferences
 
 In `System preferences > Keyboard`:
