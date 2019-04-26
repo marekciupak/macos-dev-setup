@@ -107,12 +107,10 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/mas
 
 #### Make your terminal look pretty
 
-##### Use [Solarized Theme] in iTerm2
+##### Use Dark Background in iTerm2
 
-* Download http://ethanschoonover.com/solarized/files/solarized.zip
-* Unpack
 * Go to: `iTerm2 > Preferences > Profiles > Colors`
-* Use `Color presets...` menu to import and select downloaded `Solarized dark` theme
+* Use `Color presets...` menu to import and select downloaded `Pastel (Dark Background)` theme
 
 ##### Install [Powerline Fonts]
 
