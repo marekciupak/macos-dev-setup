@@ -193,9 +193,10 @@ echo ':imap jj <Esc>' >> ~/.vimrc.before
 
 ### Another apps I recommend
 
-* [Alfred](https://www.alfredapp.com/)
 * [Spectacle](https://www.spectacleapp.com/)
 * [Monosnap](https://monosnap.com/welcome)
+* [Alfred](https://www.alfredapp.com/)
+* [MenuMeters](https://member.ipmu.jp/yuji.tachikawa/MenuMetersElCapitan/)
 
 ### RoR & web development
 
