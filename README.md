@@ -232,6 +232,5 @@ Install RVM: https://rvm.io/rvm/install
 [Oh My Zsh]: https://github.com/robbyrussell/oh-my-zsh
 [Powerline Fonts]: https://github.com/powerline/fonts
 [zsh theme]: https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
-[Solarized Theme]: http://ethanschoonover.com/solarized
 [zsh-autosuggestions]: https://github.com/zsh-users/zsh-autosuggestions
 [Janus Vim Distribution]: https://github.com/carlhuda/janus
