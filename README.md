@@ -212,6 +212,7 @@ https://gpgtools.org/#gpgsuite
 * [Spectacle](https://www.spectacleapp.com/)
 * [Monosnap](https://monosnap.com/welcome)
 * [Alfred](https://www.alfredapp.com/)
+* [GitHub Desktop](https://desktop.github.com/)
 * [MenuMeters](https://member.ipmu.jp/yuji.tachikawa/MenuMetersElCapitan/)
 
 ### RoR & web development
@@ -232,7 +233,13 @@ brew services start redis
 
 #### Version Manager with support for Ruby, Node.js, Elixir, Erlang & more
 
-Install [asdf-vm]: https://asdf-vm.com/#/core-manage-asdf-vm
+Install [asdf-vm] (details: https://asdf-vm.com/#/core-manage-asdf-vm):
+
+```shell
+brew install asdf
+echo -e "\n. $(brew --prefix asdf)/asdf.sh" >> ~/.zshrc
+echo -e "\n. $(brew --prefix asdf)/etc/bash_completion.d/asdf.bash" >> ~/.zshrc
+```
 
 [Zsh]: http://www.zsh.org/
 [Oh My Zsh]: https://github.com/robbyrussell/oh-my-zsh
