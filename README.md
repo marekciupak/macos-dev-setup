@@ -233,7 +233,7 @@ brew services start redis
 
 #### Version Manager with support for Ruby, Node.js, Elixir, Erlang & more
 
-Install [asdf-vm] (details: https://asdf-vm.com/#/core-manage-asdf-vm):
+Install [asdf-vm](https://asdf-vm.com/#/core-manage-asdf-vm):
 
 ```shell
 brew install asdf
@@ -247,4 +247,3 @@ echo -e "\n. $(brew --prefix asdf)/etc/bash_completion.d/asdf.bash" >> ~/.zshrc
 [zsh theme]: https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
 [zsh-autosuggestions]: https://github.com/zsh-users/zsh-autosuggestions
 [Janus Vim Distribution]: https://github.com/carlhuda/janus
-[asdf-vm]: https://github.com/asdf-vm/asdf
