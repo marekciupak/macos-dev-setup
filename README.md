@@ -214,19 +214,9 @@ brew install redis
 brew services start redis
 ```
 
-#### Node Version Manager
+#### Version Manager with support for Ruby, Node.js, Elixir, Erlang & more
 
-Install NVM: https://github.com/creationix/nvm
-
-##### Install yarn
-
-```shell
-npm install -g yarn
-```
-
-#### Ruby version manager
-
-Install RVM: https://rvm.io/rvm/install
+Install [asdf-vm]: https://asdf-vm.com/#/core-manage-asdf-vm
 
 [Zsh]: http://www.zsh.org/
 [Oh My Zsh]: https://github.com/robbyrussell/oh-my-zsh
@@ -234,3 +224,4 @@ Install RVM: https://rvm.io/rvm/install
 [zsh theme]: https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
 [zsh-autosuggestions]: https://github.com/zsh-users/zsh-autosuggestions
 [Janus Vim Distribution]: https://github.com/carlhuda/janus
+[asdf-vm]: https://github.com/asdf-vm/asdf
