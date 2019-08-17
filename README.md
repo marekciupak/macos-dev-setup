@@ -241,6 +241,28 @@ echo -e "\n. $(brew --prefix asdf)/asdf.sh" >> ~/.zshrc
 echo -e "\n. $(brew --prefix asdf)/etc/bash_completion.d/asdf.bash" >> ~/.zshrc
 ```
 
+##### Install multiple languages
+
+```shell
+# install last version of Ruby
+asdf plugin-add ruby
+asdf install ruby 2.6.3
+asdf global ruby 2.6.3
+
+# install last version of Erlang & Elixir
+asdf plugin-add erlang
+asdf install erlang 22.0.7
+asdf global erlang 22.0.7
+asdf plugin-add elixir
+asdf install elixir 1.9.1
+asdf global elixir 1.9.1
+
+# install last version of Node JS
+asdf plugin-add nodejs
+asdf install nodejs 12.8.1
+asdf global nodejs 12.8.1
+```
+
 [Zsh]: http://www.zsh.org/
 [Oh My Zsh]: https://github.com/robbyrussell/oh-my-zsh
 [Powerline Fonts]: https://github.com/powerline/fonts
