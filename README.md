@@ -203,6 +203,10 @@ Map `jj` to `esc`:
 echo ':imap jj <Esc>' >> ~/.vimrc.before
 ```
 
+#### GPG Suite
+
+https://gpgtools.org/#gpgsuite
+
 ### Another apps I recommend
 
 * [Spectacle](https://www.spectacleapp.com/)
