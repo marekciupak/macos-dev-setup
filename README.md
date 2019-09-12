@@ -185,8 +185,8 @@ setopt SHARE_HISTORY            # share history between sessions
 
 ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='fg=30'
 
-LC_CTYPE=en_US.UTF-8
-LC_ALL=en_US.UTF-8
+export LC_CTYPE=en_US.UTF-8
+export LC_ALL=en_US.UTF-8
 
 # homebrew
 export HOMEBREW_NO_INSECURE_REDIRECT=1
