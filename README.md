@@ -187,6 +187,10 @@ ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='fg=30'
 
 LC_CTYPE=en_US.UTF-8
 LC_ALL=en_US.UTF-8
+
+# homebrew
+export HOMEBREW_NO_INSECURE_REDIRECT=1
+export HOMEBREW_CASK_OPTS=--require-sha
 ```
 
 #### Vim
