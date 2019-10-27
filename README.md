@@ -252,11 +252,11 @@ asdf global ruby 2.6.3
 
 # install last version of Erlang & Elixir
 asdf plugin-add erlang
-asdf install erlang 22.0.7
-asdf global erlang 22.0.7
+asdf install erlang 22.1.4
+asdf global erlang 22.1.4
 asdf plugin-add elixir
-asdf install elixir 1.9.1
-asdf global elixir 1.9.1
+asdf install elixir 1.9.2
+asdf global elixir 1.9.2
 
 # install last version of Node JS
 asdf plugin-add nodejs
