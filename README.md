@@ -38,7 +38,6 @@ Open VS Code, go to `Code` > `Preferences` > `Settings` and paste:
         120
     ],
     "editor.tabSize": 2,
-    "workbench.colorTheme": "One Monokai",
     "explorer.confirmDragAndDrop": false,
     "explorer.confirmDelete": false,
     "workbench.startupEditor": "newUntitledFile",
@@ -48,8 +47,6 @@ Open VS Code, go to `Code` > `Preferences` > `Settings` and paste:
     "terminal.integrated.fontFamily": "Meslo LG S DZ for Powerline",
 }
 ```
-
-Install `One Monokai` extension.
 
 #### Web browser
 
