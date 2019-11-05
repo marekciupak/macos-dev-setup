@@ -36,7 +36,8 @@ Install VS Code: https://code.visualstudio.com/
 
 #### Configuration
 
-Open VS Code, go to `Code` > `Preferences` > `Settings` and paste:
+Open VS Code, press `Cmd + p`, type `> Preferences: Open Settings (JSON)`, press `Enter`, and paste the following
+settings to `settings.json`:
 
 ```yml
 {
@@ -50,6 +51,9 @@ Open VS Code, go to `Code` > `Preferences` > `Settings` and paste:
     "files.insertFinalNewline": true,
     "files.trimTrailingWhitespace": true,
     "files.trimFinalNewlines": true,
+    "editor.autoClosingBrackets": "never",
+    "editor.autoClosingOvertype": "never",
+    "editor.autoClosingQuotes": "never",
     "terminal.integrated.fontFamily": "Meslo LG S DZ for Powerline",
 }
 ```
