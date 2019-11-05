@@ -4,15 +4,21 @@
 
 ### Hard disc encryption
 
-Go to `System preferences > Security & Privacy > FileVault` and make sure the FileVault is ON.
+Go to `System Preferences > Security & Privacy > FileVault` and make sure the FileVault is ON.
 
 ### Firewall
 
-Go to `System preferences > Security & Privacy > Firewall` and make sure the Firewall is ON.
+Go to `System Preferences > Security & Privacy > Firewall` and make sure the Firewall is ON.
+
+### Require password after sleep
+
+Go to `System Preferences > Security & Privacy > General` and set `Require password after sleep or screen saver begins`
+to `immediately` or `5 seconds`.
 
 ### More
 
-https://blog.bejarano.io/hardening-macos.html
+* https://blog.bejarano.io/hardening-macos.html
+* https://github.com/drduh/macOS-Security-and-Privacy-Guide
 
 ## Keyboard preferences
 
@@ -24,11 +30,11 @@ In `System preferences > Keyboard`:
 
 ## Apps
 
-#### Text editor
+### Text editor
 
 Install VS Code: https://code.visualstudio.com/
 
-##### Configuration
+#### Configuration
 
 Open VS Code, go to `Code` > `Preferences` > `Settings` and paste:
 
@@ -48,39 +54,39 @@ Open VS Code, go to `Code` > `Preferences` > `Settings` and paste:
 }
 ```
 
-#### Web browser
+### Web browser
 
 Install Chrome: https://www.google.com/chrome/browser/desktop/index.html
 
-##### Extensions I recommend
+#### Extensions I recommend
 
-###### Security / privacy
+##### Security / privacy
 
 * [ublock-origin](https://chrome.google.com/webstore/detail/ublock-origin/cjpalhdlnbpafiamejdnhcphjbkeiagm)
 * [https-everywhere](https://chrome.google.com/webstore/detail/https-everywhere/gcbommkclmclpchllfjekcdonpmejbdp)
 * [privacy-badger](https://chrome.google.com/webstore/detail/privacy-badger/pkehgijcmpdhfbdbbnkijodmdjhbjlgp)
 
-###### Utilities
+##### Utilities
 
 * [full-page-screen-capture](https://chrome.google.com/webstore/detail/full-page-screen-capture/fdpohaocaechififmbbbbbknoalclacl)
 
-#### Terminal
+### Terminal
 
 Install iTerm2: https://www.iterm2.com/downloads.html
 
-#### Software package manager
+### Software package manager
 
 Install Homebrew: http://brew.sh/
 
-#### Basic tools
+### Basic tools
 
 Install some useful packages:
 
 ```shell
-brew install curl mc gpg gpg2
+brew install curl mc
 ```
 
-#### Git
+### Git
 
 Install Git:
 
@@ -97,7 +103,7 @@ git config --global user.email "email@example.com"
 
 :warning: Don't forget to replace _"Mona Lisa"_ and _"email@example.com"_ with your own data.
 
-#### Shell
+### Shell
 
 Install [Zsh] and set it as a default shell:
 
@@ -114,14 +120,14 @@ Install [Oh My Zsh]:
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 ```
 
-#### Make your terminal look pretty
+### Make your terminal look pretty
 
-##### Use Dark Background in iTerm2
+#### Use Dark Background in iTerm2
 
 * Go to: `iTerm2 > Preferences > Profiles > Colors`
 * Use `Color presets...` menu to import and select downloaded `Pastel (Dark Background)` theme
 
-##### Install [Powerline Fonts]
+#### Install [Powerline Fonts]
 
 ```shell
 cd $HOME
@@ -130,12 +136,12 @@ git clone https://github.com/powerline/fonts.git
 rm -rf ~/fonts/
 ```
 
-##### Set font in iTerm2
+#### Set font in iTerm2
 
 * Go to: `iTerm2 > Preferences > Profiles > Text > Font > Change Font`
 * Select the font: `Fixed Width > Meslo LG S DZ for Powerline > RegularForPowerline > 11`
 
-##### Set [zsh theme]
+#### Set [zsh theme]
 
 Edit `~/.zshrc` file and update `ZSH_THEME=` to:
 
@@ -143,7 +149,7 @@ Edit `~/.zshrc` file and update `ZSH_THEME=` to:
 ZSH_THEME="agnoster"
 ```
 
-#### Configure Zsh
+### Configure Zsh
 
 Install [zsh-autosuggestions]:
 
@@ -190,7 +196,7 @@ export HOMEBREW_NO_INSECURE_REDIRECT=1
 export HOMEBREW_CASK_OPTS=--require-sha
 ```
 
-#### Vim
+### Vim
 
 Install [Janus Vim Distribution]:
 
@@ -204,7 +210,7 @@ Map `jj` to `esc`:
 echo ':imap jj <Esc>' >> ~/.vimrc.before
 ```
 
-#### GPG Suite
+### GPG Suite
 
 https://gpgtools.org/#gpgsuite
 
@@ -247,21 +253,26 @@ echo -e "\n. $(brew --prefix asdf)/etc/bash_completion.d/asdf.bash" >> ~/.zshrc
 ```shell
 # install last version of Ruby
 asdf plugin-add ruby
-asdf install ruby 2.6.3
-asdf global ruby 2.6.3
+asdf install ruby 2.6.5
+asdf global ruby 2.6.5
 
 # install last version of Erlang & Elixir
 asdf plugin-add erlang
-asdf install erlang 22.1.4
-asdf global erlang 22.1.4
+asdf install erlang 22.1.5
+asdf global erlang 22.1.5
 asdf plugin-add elixir
-asdf install elixir 1.9.2
-asdf global elixir 1.9.2
+asdf install elixir 1.9.4
+asdf global elixir 1.9.4
 
 # install last version of Node JS
 asdf plugin-add nodejs
-asdf install nodejs 12.8.1
-asdf global nodejs 12.8.1
+asdf install nodejs 13.0.1
+asdf global nodejs 13.0.1
+```
+
+```shell
+# to display the list of available versions, use `list-all`, ex:
+asdf list-all ruby
 ```
 
 [Zsh]: http://www.zsh.org/
