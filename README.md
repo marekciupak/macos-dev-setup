@@ -276,9 +276,14 @@ asdf plugin-update --all
 asdf list-all ruby
 ```
 
+#### Sample config for [rubocop]
+
+[.rubocop.yml](.rubocop.yml)
+
 [Zsh]: http://www.zsh.org/
 [Oh My Zsh]: https://github.com/robbyrussell/oh-my-zsh
 [Powerline Fonts]: https://github.com/powerline/fonts
 [zsh theme]: https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
 [zsh-autosuggestions]: https://github.com/zsh-users/zsh-autosuggestions
 [Janus Vim Distribution]: https://github.com/carlhuda/janus
+[rubocop]: https://github.com/rubocop-hq/rubocop
