@@ -160,7 +160,7 @@ git clone git://github.com/zsh-users/zsh-autosuggestions $ZSH_CUSTOM/plugins/zsh
 Edit `~/.zshrc` file and update `plugins=` to:
 
 ```shell
-plugins=(git bundler osx rake ruby rails zsh-autosuggestions fasd)
+plugins=(git rails zsh-autosuggestions)
 ```
 
 :mortar_board: List of all available plugins is here: https://github.com/robbyrussell/oh-my-zsh/tree/master/plugins.
