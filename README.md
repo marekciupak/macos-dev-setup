@@ -210,6 +210,37 @@ Map `jj` to `esc`:
 echo ':imap jj <Esc>' >> ~/.vimrc.before
 ```
 
+### Install [exa]
+
+```shell
+brew install exa
+```
+
+Edit `~/.zshrc` file and the following lines at the end:
+
+```shell
+# exa
+alias l="exa -l -a -a --git --time-style=long-iso --group-directories-first"
+```
+
+### Install [zsh-syntax-highlighting] and [zsh-history-substring-search]
+
+```shell
+brew install zsh-syntax-highlighting zsh-history-substring-search
+```
+
+Edit `~/.zshrc` file and the following lines at the end:
+
+```shell
+# zsh-syntax-highlighting (must be the last plugin sourced)
+source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+
+# zsh-history-substring-search (must be sourced after zsh-syntax-highlighting)
+source /usr/local/share/zsh-history-substring-search/zsh-history-substring-search.zsh
+bindkey "$terminfo[kcuu1]" history-substring-search-up
+bindkey "$terminfo[kcud1]" history-substring-search-down
+```
+
 ### GPG Suite
 
 https://gpgtools.org/#gpgsuite
@@ -286,4 +317,7 @@ Check it here: [.rubocop.yml](.rubocop.yml).
 [zsh theme]: https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
 [zsh-autosuggestions]: https://github.com/zsh-users/zsh-autosuggestions
 [Janus Vim Distribution]: https://github.com/carlhuda/janus
+[exa]: https://the.exa.website/
+[zsh-syntax-highlighting]: https://github.com/zsh-users/zsh-syntax-highlighting
+[zsh-history-substring-search]: https://github.com/zsh-users/zsh-history-substring-search
 [rubocop]: https://github.com/rubocop-hq/rubocop
