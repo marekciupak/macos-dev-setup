@@ -276,9 +276,9 @@ asdf plugin-update --all
 asdf list-all ruby
 ```
 
-#### Sample config for [rubocop]
+#### Sample config for [rubocop] gem
 
-[.rubocop.yml](.rubocop.yml)
+Check it here: [.rubocop.yml](.rubocop.yml).
 
 [Zsh]: http://www.zsh.org/
 [Oh My Zsh]: https://github.com/robbyrussell/oh-my-zsh
