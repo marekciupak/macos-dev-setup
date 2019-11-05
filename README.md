@@ -271,7 +271,8 @@ asdf global nodejs 13.0.1
 ```
 
 ```shell
-# to display the list of available versions, use `list-all`, ex:
+# to display the list of available versions, update plugins and use `list-all`, ex:
+asdf plugin-update --all
 asdf list-all ruby
 ```
 
