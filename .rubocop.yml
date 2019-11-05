@@ -1,19 +1,23 @@
 AllCops:
-  TargetRubyVersion: 2.5
+  TargetRubyVersion: 2.6
   Exclude:
     - 'node_modules/**/*'
     - 'bin/**/*'
-    - 'db/**/*'
+    - 'db/schema.rb'
     - 'config/**/*'
-    - 'spec/spec_helper.rb'
+    - 'test/application_system_test_case.rb'
+    - 'test/test_helper.rb'
     - 'Guardfile'
     - 'Rakefile'
 
-Documentation:
-  Enabled: false
-
 Bundler/OrderedGems:
   Enabled: false
+
+Layout/IndentFirstHashElement:
+  EnforcedStyle: consistent
+
+Layout/MultilineMethodCallIndentation:
+  EnforcedStyle: indented
 
 Layout/SpaceInsideHashLiteralBraces:
   EnforcedStyle: no_space
@@ -21,10 +25,13 @@ Layout/SpaceInsideHashLiteralBraces:
 Metrics/AbcSize:
   Enabled: false
 
-Metrics/BlockLength:
+Metrics/ClassLength:
   Enabled: false
 
-Metrics/ClassLength:
+Metrics/ModuleLength:
+  Enabled: false
+
+Metrics/BlockLength:
   Enabled: false
 
 Metrics/CyclomaticComplexity:
@@ -41,17 +48,26 @@ Metrics/LineLength:
 Metrics/MethodLength:
   Enabled: false
 
-Metrics/ModuleLength:
-  Enabled: false
-
 Metrics/ParameterLists:
   Enabled: false
 
 Metrics/PerceivedComplexity:
   Enabled: false
 
-Rails:
-  Enabled: true
+Style/Documentation:
+  Enabled: false
+
+Style/GuardClause:
+  Enabled: false
+
+Style/TrailingCommaInArguments:
+  EnforcedStyleForMultiline: comma
+
+Style/TrailingCommaInArrayLiteral:
+  EnforcedStyleForMultiline: comma
+
+Style/TrailingCommaInHashLiteral:
+  EnforcedStyleForMultiline: comma
 
 Style/DoubleNegation:
   Enabled: false
@@ -59,8 +75,10 @@ Style/DoubleNegation:
 Style/FrozenStringLiteralComment:
   Enabled: false
 
-Style/TrailingCommaInArguments:
-  EnforcedStyleForMultiline: comma
+require: rubocop-rails
 
-Style/TrailingCommaInLiteral:
-  EnforcedStyleForMultiline: comma
+Rails:
+  Enabled: true
+
+Rails/DynamicFindBy:
+  Enabled: false
