@@ -214,7 +214,7 @@ echo ':imap jj <Esc>' >> ~/.vimrc.before
 
 https://gpgtools.org/#gpgsuite
 
-### Another apps I recommend
+### Other useful apps
 
 * [Spectacle](https://www.spectacleapp.com/)
 * [Monosnap](https://monosnap.com/welcome)
