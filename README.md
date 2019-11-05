@@ -210,7 +210,9 @@ Map `jj` to `esc`:
 echo ':imap jj <Esc>' >> ~/.vimrc.before
 ```
 
-### Install [exa]
+### exa
+
+Install [exa]:
 
 ```shell
 brew install exa
@@ -223,7 +225,9 @@ Edit `~/.zshrc` file and the following lines at the end:
 alias l="exa -l -a -a --git --time-style=long-iso --group-directories-first"
 ```
 
-### Install [zsh-syntax-highlighting] and [zsh-history-substring-search]
+### zsh-syntax-highlighting and zsh-history-substring-search
+
+Install [zsh-syntax-highlighting] and [zsh-history-substring-search]:
 
 ```shell
 brew install zsh-syntax-highlighting zsh-history-substring-search
