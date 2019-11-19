@@ -82,6 +82,12 @@ Install iTerm2: https://www.iterm2.com/downloads.html
 
 Install Homebrew: https://brew.sh/
 
+And then, run:
+
+```shell
+brew analytics off
+```
+
 ### Basic tools
 
 Install some useful packages:
@@ -196,6 +202,7 @@ export LC_CTYPE=en_US.UTF-8
 export LC_ALL=en_US.UTF-8
 
 # homebrew
+export HOMEBREW_NO_ANALYTICS=1
 export HOMEBREW_NO_INSECURE_REDIRECT=1
 export HOMEBREW_CASK_OPTS=--require-sha
 ```
