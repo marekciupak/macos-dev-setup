@@ -80,7 +80,7 @@ Install iTerm2: https://www.iterm2.com/downloads.html
 
 ### Software package manager
 
-Install Homebrew: http://brew.sh/
+Install Homebrew: https://brew.sh/
 
 ### Basic tools
 
