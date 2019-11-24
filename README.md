@@ -36,27 +36,31 @@ Install VS Code: https://code.visualstudio.com/
 
 #### Configuration
 
-Open VS Code, press `Cmd + p`, type `> Preferences: Open Settings (JSON)`, press `Enter`, and paste the following
+Open VS Code and:
+
+* press `Cmd + p`, type `> Shell Command: Install 'code' command in Path` and press `Enter`,
+
+* press `Cmd + p`, type `> Preferences: Open Settings (JSON)`, press `Enter`, and paste the following
 settings to `settings.json`:
 
-```yml
-{
-    "editor.rulers": [
-        120
-    ],
-    "editor.tabSize": 2,
-    "explorer.confirmDragAndDrop": false,
-    "explorer.confirmDelete": false,
-    "workbench.startupEditor": "newUntitledFile",
-    "files.insertFinalNewline": true,
-    "files.trimTrailingWhitespace": true,
-    "files.trimFinalNewlines": true,
-    "editor.autoClosingBrackets": "never",
-    "editor.autoClosingOvertype": "never",
-    "editor.autoClosingQuotes": "never",
-    "terminal.integrated.fontFamily": "Meslo LG S DZ for Powerline",
-}
-```
+  ```yml
+  {
+      "editor.rulers": [
+          120
+      ],
+      "editor.tabSize": 2,
+      "explorer.confirmDragAndDrop": false,
+      "explorer.confirmDelete": false,
+      "workbench.startupEditor": "newUntitledFile",
+      "files.insertFinalNewline": true,
+      "files.trimTrailingWhitespace": true,
+      "files.trimFinalNewlines": true,
+      "editor.autoClosingBrackets": "never",
+      "editor.autoClosingOvertype": "never",
+      "editor.autoClosingQuotes": "never",
+      "terminal.integrated.fontFamily": "Meslo LG S DZ for Powerline",
+  }
+  ```
 
 ### Web browser
 
