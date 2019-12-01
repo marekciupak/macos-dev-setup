@@ -308,8 +308,8 @@ asdf global ruby 2.6.5
 
 # install last version of Erlang & Elixir
 asdf plugin-add erlang
-asdf install erlang 22.1.5
-asdf global erlang 22.1.5
+asdf install erlang 22.1.8
+asdf global erlang 22.1.8
 asdf plugin-add elixir
 asdf install elixir 1.9.4
 asdf global elixir 1.9.4
