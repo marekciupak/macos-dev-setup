@@ -1,5 +1,5 @@
 # Used by "mix format"
 [
-  # (keep default config here)
+  # (keep automatically generated config here),
   line_length: 120
 ]
