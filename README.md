@@ -30,6 +30,22 @@ In `System preferences > Keyboard`:
 
 ## Apps
 
+### Web browser
+
+Install Chrome: https://www.google.com/chrome/browser/desktop/index.html
+
+#### Extensions I recommend
+
+##### Security / privacy
+
+* [ublock-origin](https://chrome.google.com/webstore/detail/ublock-origin/cjpalhdlnbpafiamejdnhcphjbkeiagm)
+* [https-everywhere](https://chrome.google.com/webstore/detail/https-everywhere/gcbommkclmclpchllfjekcdonpmejbdp)
+* [privacy-badger](https://chrome.google.com/webstore/detail/privacy-badger/pkehgijcmpdhfbdbbnkijodmdjhbjlgp)
+
+##### Utilities
+
+* [full-page-screen-capture](https://chrome.google.com/webstore/detail/full-page-screen-capture/fdpohaocaechififmbbbbbknoalclacl)
+
 ### Text editor
 
 Install VS Code: https://code.visualstudio.com/
@@ -61,22 +77,6 @@ settings to `settings.json`:
       "terminal.integrated.fontFamily": "Meslo LG S DZ for Powerline",
   }
   ```
-
-### Web browser
-
-Install Chrome: https://www.google.com/chrome/browser/desktop/index.html
-
-#### Extensions I recommend
-
-##### Security / privacy
-
-* [ublock-origin](https://chrome.google.com/webstore/detail/ublock-origin/cjpalhdlnbpafiamejdnhcphjbkeiagm)
-* [https-everywhere](https://chrome.google.com/webstore/detail/https-everywhere/gcbommkclmclpchllfjekcdonpmejbdp)
-* [privacy-badger](https://chrome.google.com/webstore/detail/privacy-badger/pkehgijcmpdhfbdbbnkijodmdjhbjlgp)
-
-##### Utilities
-
-* [full-page-screen-capture](https://chrome.google.com/webstore/detail/full-page-screen-capture/fdpohaocaechififmbbbbbknoalclacl)
 
 ### Terminal
 
