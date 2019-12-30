@@ -98,7 +98,11 @@ Install iTerm2: https://www.iterm2.com/downloads.html
 
 ### Software package manager
 
-Install Homebrew: https://brew.sh/
+Install [Homebrew]:
+
+```shell
+/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+```
 
 And then, run:
 
@@ -338,6 +342,8 @@ asdf install nodejs 13.5.0
 asdf global nodejs 13.5.0
 ```
 
+#### Updating versions in the future
+
 ```shell
 # to display the list of available versions, update plugins and use `list-all`, ex:
 asdf plugin-update --all
@@ -348,6 +354,7 @@ asdf list-all ruby
 
 Check it here: [.rubocop.yml](.rubocop.yml).
 
+[Homebrew]: https://brew.sh/
 [Zsh]: http://www.zsh.org/
 [Oh My Zsh]: https://github.com/robbyrussell/oh-my-zsh
 [Powerline Fonts]: https://github.com/powerline/fonts
