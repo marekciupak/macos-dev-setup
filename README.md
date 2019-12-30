@@ -78,7 +78,21 @@ settings to `settings.json`:
   }
   ```
 
-### Terminal
+### GPG Suite
+
+https://gpgtools.org/#gpgsuite
+
+### Other useful apps
+
+* [Spectacle](https://www.spectacleapp.com/)
+* [Monosnap](https://monosnap.com/welcome)
+* [Alfred](https://www.alfredapp.com/)
+* [GitHub Desktop](https://desktop.github.com/)
+* [MenuMeters](https://member.ipmu.jp/yuji.tachikawa/MenuMetersElCapitan/)
+
+## Terminal
+
+### iTerm2
 
 Install iTerm2: https://www.iterm2.com/downloads.html
 
@@ -273,35 +287,23 @@ Edit `~/.zshrc` file and the following lines at the end:
 alias l="exa -l -a -a --git --time-style=long-iso --group-directories-first"
 ```
 
-### GPG Suite
+## RoR & web development
 
-https://gpgtools.org/#gpgsuite
-
-### Other useful apps
-
-* [Spectacle](https://www.spectacleapp.com/)
-* [Monosnap](https://monosnap.com/welcome)
-* [Alfred](https://www.alfredapp.com/)
-* [GitHub Desktop](https://desktop.github.com/)
-* [MenuMeters](https://member.ipmu.jp/yuji.tachikawa/MenuMetersElCapitan/)
-
-### RoR & web development
-
-#### PostgreSQL
+### PostgreSQL
 
 ```shell
 brew install postgresql
 brew services start postgresql
 ```
 
-#### Redis
+### Redis
 
 ```shell
 brew install redis
 brew services start redis
 ```
 
-#### Version Manager with support for Ruby, Node.js, Elixir, Erlang & more
+### Version Manager with support for Ruby, Node.js, Elixir, Erlang & more
 
 Install [asdf-vm](https://asdf-vm.com/#/core-manage-asdf-vm):
 
@@ -311,7 +313,7 @@ echo -e "\n. $(brew --prefix asdf)/asdf.sh" >> ~/.zshrc
 echo -e "\n. $(brew --prefix asdf)/etc/bash_completion.d/asdf.bash" >> ~/.zshrc
 ```
 
-##### Install multiple languages
+#### Install multiple languages
 
 ```shell
 # install last version of Ruby
@@ -339,7 +341,7 @@ asdf plugin-update --all
 asdf list-all ruby
 ```
 
-#### Sample config for [rubocop] gem
+### Sample config for [rubocop] gem
 
 Check it here: [.rubocop.yml](.rubocop.yml).
 
