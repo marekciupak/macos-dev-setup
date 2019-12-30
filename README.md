@@ -165,16 +165,10 @@ ZSH_THEME="agnoster"
 
 ### Configure Zsh
 
-Install [zsh-autosuggestions]:
-
-```shell
-git clone git://github.com/zsh-users/zsh-autosuggestions $ZSH_CUSTOM/plugins/zsh-autosuggestions
-```
-
 Edit `~/.zshrc` file and update `plugins=` to:
 
 ```shell
-plugins=(git rails zsh-autosuggestions)
+plugins=(git rails)
 ```
 
 :mortar_board: List of all available plugins is here: https://github.com/robbyrussell/oh-my-zsh/tree/master/plugins.
@@ -200,8 +194,6 @@ setopt HIST_SAVE_NO_DUPS        # don't save duplicates
 setopt INC_APPEND_HISTORY       # write after each command
 setopt SHARE_HISTORY            # share history between sessions
 
-ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='fg=30'
-
 export LC_CTYPE=en_US.UTF-8
 export LC_ALL=en_US.UTF-8
 
@@ -209,6 +201,47 @@ export LC_ALL=en_US.UTF-8
 export HOMEBREW_NO_ANALYTICS=1
 export HOMEBREW_NO_INSECURE_REDIRECT=1
 export HOMEBREW_CASK_OPTS=--require-sha
+```
+
+#### zsh-autosuggestions
+
+Install [zsh-autosuggestions]:
+
+```shell
+git clone git://github.com/zsh-users/zsh-autosuggestions $ZSH_CUSTOM/plugins/zsh-autosuggestions
+```
+
+Edit `~/.zshrc` file and add `zsh-autosuggestions` to `plugins=` list:
+
+```shell
+plugins=(.... zsh-autosuggestions)
+```
+
+Edit `~/.zshrc` file and the following lines at the end:
+
+```shell
+# zsh-autosuggestions
+ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='fg=30'
+```
+
+#### zsh-syntax-highlighting and zsh-history-substring-search
+
+Install [zsh-syntax-highlighting] and [zsh-history-substring-search]:
+
+```shell
+brew install zsh-syntax-highlighting zsh-history-substring-search
+```
+
+Edit `~/.zshrc` file and the following lines at the end:
+
+```shell
+# zsh-syntax-highlighting (must be the last plugin sourced)
+source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+
+# zsh-history-substring-search (must be sourced after zsh-syntax-highlighting)
+source /usr/local/share/zsh-history-substring-search/zsh-history-substring-search.zsh
+bindkey "$terminfo[kcuu1]" history-substring-search-up
+bindkey "$terminfo[kcud1]" history-substring-search-down
 ```
 
 ### Vim
@@ -238,26 +271,6 @@ Edit `~/.zshrc` file and the following lines at the end:
 ```shell
 # exa
 alias l="exa -l -a -a --git --time-style=long-iso --group-directories-first"
-```
-
-### zsh-syntax-highlighting and zsh-history-substring-search
-
-Install [zsh-syntax-highlighting] and [zsh-history-substring-search]:
-
-```shell
-brew install zsh-syntax-highlighting zsh-history-substring-search
-```
-
-Edit `~/.zshrc` file and the following lines at the end:
-
-```shell
-# zsh-syntax-highlighting (must be the last plugin sourced)
-source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-
-# zsh-history-substring-search (must be sourced after zsh-syntax-highlighting)
-source /usr/local/share/zsh-history-substring-search/zsh-history-substring-search.zsh
-bindkey "$terminfo[kcuu1]" history-substring-search-up
-bindkey "$terminfo[kcud1]" history-substring-search-down
 ```
 
 ### GPG Suite
