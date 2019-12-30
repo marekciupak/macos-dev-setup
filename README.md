@@ -318,21 +318,24 @@ echo -e "\n. $(brew --prefix asdf)/etc/bash_completion.d/asdf.bash" >> ~/.zshrc
 ```shell
 # install last version of Ruby
 asdf plugin-add ruby
-asdf install ruby 2.6.5
-asdf global ruby 2.6.5
+asdf install ruby 2.7.0
+asdf global ruby 2.7.0
 
-# install last version of Erlang & Elixir
+# install last version of Erlang (required for Elixir)
+brew install wxmac         # for building with wxWidgets (required to start observer or debugger)
 asdf plugin-add erlang
-asdf install erlang 22.1.8
-asdf global erlang 22.1.8
+asdf install erlang 22.2.1
+asdf global erlang 22.2.1
+
+# install last version of Elixir
 asdf plugin-add elixir
 asdf install elixir 1.9.4
 asdf global elixir 1.9.4
 
 # install last version of Node JS
 asdf plugin-add nodejs
-asdf install nodejs 13.0.1
-asdf global nodejs 13.0.1
+asdf install nodejs 13.5.0
+asdf global nodejs 13.5.0
 ```
 
 ```shell
