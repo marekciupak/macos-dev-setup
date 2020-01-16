@@ -336,6 +336,8 @@ asdf plugin-add elixir
 asdf install elixir 1.9.4
 asdf global elixir 1.9.4
 
+# import the OpenPGP public keys to a dedicated keyring (to be able to check the authenticity of the package)
+GNUPGHOME="${ASDF_DIR:-$HOME/.asdf}/keyrings/nodejs" bash -c 'mkdir -p "$GNUPGHOME" && chmod 0700 "$GNUPGHOME" && bash ~/.asdf/plugins/nodejs/bin/import-release-team-keyring'
 # install last version of Node JS
 asdf plugin-add nodejs
 asdf install nodejs 13.6.0
