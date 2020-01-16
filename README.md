@@ -338,8 +338,8 @@ asdf global elixir 1.9.4
 
 # install last version of Node JS
 asdf plugin-add nodejs
-asdf install nodejs 13.5.0
-asdf global nodejs 13.5.0
+asdf install nodejs 13.6.0
+asdf global nodejs 13.6.0
 ```
 
 #### Updating versions in the future
