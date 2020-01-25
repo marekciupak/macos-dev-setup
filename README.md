@@ -186,7 +186,7 @@ ZSH_THEME="agnoster"
 Edit `~/.zshrc` file and update `plugins=` to:
 
 ```shell
-plugins=(git rails)
+plugins=(git bundler rails)
 ```
 
 :mortar_board: List of all available plugins is here: https://github.com/robbyrussell/oh-my-zsh/tree/master/plugins.
