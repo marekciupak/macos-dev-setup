@@ -221,6 +221,20 @@ export HOMEBREW_NO_INSECURE_REDIRECT=1
 export HOMEBREW_CASK_OPTS=--require-sha
 ```
 
+##### Clear completions cache
+
+If you see the following message when starting a new session in the terminal:
+
+```
+compdef: unknown command or service: rails
+```
+
+you can run:
+
+```shell
+rm ~/.zcompdump*
+```
+
 #### zsh-autosuggestions
 
 Install [zsh-autosuggestions]:
