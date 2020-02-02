@@ -30,21 +30,35 @@ In `System preferences > Keyboard`:
 
 ## Apps
 
-### Web browser
+### Web browsers
 
-Install Chrome: https://www.google.com/chrome/browser/desktop/index.html
+#### Chrome
 
-#### Extensions I recommend
+Install: https://www.google.com/chrome/browser/desktop/index.html
 
-##### Security / privacy
+##### Extensions I recommend
+
+###### Security / privacy
 
 * [ublock-origin](https://chrome.google.com/webstore/detail/ublock-origin/cjpalhdlnbpafiamejdnhcphjbkeiagm)
 * [https-everywhere](https://chrome.google.com/webstore/detail/https-everywhere/gcbommkclmclpchllfjekcdonpmejbdp)
 * [privacy-badger](https://chrome.google.com/webstore/detail/privacy-badger/pkehgijcmpdhfbdbbnkijodmdjhbjlgp)
 
-##### Utilities
+###### Utilities
 
 * [full-page-screen-capture](https://chrome.google.com/webstore/detail/full-page-screen-capture/fdpohaocaechififmbbbbbknoalclacl)
+
+#### Mozilla Firefox
+
+Install: https://www.mozilla.org/pl/firefox/new/
+
+##### Extensions I recommend
+
+###### Security / privacy
+
+* [ublock-origin](https://addons.mozilla.org/en-US/firefox/addon/ublock-origin/)
+* [https-everywhere](https://addons.mozilla.org/en-US/firefox/addon/https-everywhere/)
+* [privacy-badger](https://addons.mozilla.org/en-US/firefox/addon/privacy-badger17/)
 
 ### Text editor
 
