@@ -335,7 +335,7 @@ brew install redis
 brew services start redis
 ```
 
-### Version Manager with support for Ruby, Node.js, Elixir, Erlang & more
+### Version Manager with support for Ruby, Node.js, Elixir, Erlang, Python & more
 
 Install [asdf-vm](https://asdf-vm.com/#/core-manage-asdf-vm):
 
@@ -370,6 +370,11 @@ GNUPGHOME="${ASDF_DIR:-$HOME/.asdf}/keyrings/nodejs" bash -c 'mkdir -p "$GNUPGHO
 asdf plugin-add nodejs
 asdf install nodejs 13.6.0
 asdf global nodejs 13.6.0
+
+# install last version of Python
+asdf plugin-add python
+asdf install python 3.8.1
+asdf global python 3.8.1
 ```
 
 #### Updating versions in the future
