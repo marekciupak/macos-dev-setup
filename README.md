@@ -375,6 +375,7 @@ asdf global nodejs 13.6.0
 asdf plugin-add python
 asdf install python 3.8.1
 asdf global python 3.8.1
+pip install --upgrade pip
 ```
 
 #### Updating versions in the future
