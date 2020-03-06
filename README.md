@@ -356,20 +356,20 @@ asdf global ruby 2.7.0
 # install last version of Erlang (required for Elixir)
 brew install wxmac         # for building with wxWidgets (required to start observer or debugger)
 asdf plugin-add erlang
-asdf install erlang 22.2.1
-asdf global erlang 22.2.1
+asdf install erlang 22.2.8
+asdf global erlang 22.2.8
 
 # install last version of Elixir
 asdf plugin-add elixir
-asdf install elixir 1.9.4
-asdf global elixir 1.9.4
+asdf install elixir 1.10.2
+asdf global elixir 1.10.2
 
 # import the OpenPGP public keys to a dedicated keyring (to be able to check the authenticity of the package)
 GNUPGHOME="${ASDF_DIR:-$HOME/.asdf}/keyrings/nodejs" bash -c 'mkdir -p "$GNUPGHOME" && chmod 0700 "$GNUPGHOME" && bash ~/.asdf/plugins/nodejs/bin/import-release-team-keyring'
-# install last version of Node JS
+# install last LTS version of Node JS
 asdf plugin-add nodejs
-asdf install nodejs 13.6.0
-asdf global nodejs 13.6.0
+asdf install nodejs 12.16.1
+asdf global nodejs 12.16.1
 
 # install last version of Python
 asdf plugin-add python
