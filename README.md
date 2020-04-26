@@ -319,6 +319,14 @@ Edit `~/.zshrc` file and the following lines at the end:
 alias l="exa -l -a -a --git --time-style=long-iso --group-directories-first"
 ```
 
+### The Silver Searcher
+
+Install [The Silver Searcher]:
+
+```shell
+brew install the_silver_searcher
+```
+
 ## RoR & web development
 
 ### PostgreSQL
@@ -398,6 +406,7 @@ Check it here: [.rubocop.yml](.rubocop.yml).
 [zsh-autosuggestions]: https://github.com/zsh-users/zsh-autosuggestions
 [Janus Vim Distribution]: https://github.com/carlhuda/janus
 [exa]: https://the.exa.website/
+[The Silver Searcher]: https://github.com/ggreer/the_silver_searcher
 [zsh-syntax-highlighting]: https://github.com/zsh-users/zsh-syntax-highlighting
 [zsh-history-substring-search]: https://github.com/zsh-users/zsh-history-substring-search
 [rubocop]: https://github.com/rubocop-hq/rubocop
